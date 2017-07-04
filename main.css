@@ -27,7 +27,7 @@ header {
   height: 100%;
   width: 100%;
   transform-origin: top left;
-  transform: skewY(-10deg);
+  transform: skewY(-15deg);
   background-color: #96ffb0;
 }
 
@@ -42,9 +42,22 @@ nav {
   display: none;   <!-- Currently set to none -->
 }
 
+.space_needle {
+  position: absolute;
+  right: 0;
+  margin-bottom: 10px;
+  height: 400px;
+  width: auto;
+  z-index: -2;
+}
+
+.needle_room {
+  height: 80px;
+}
+
 .slant {
   position: relative;
-  height: 100px;
+  height: 150px;
 }
 
 .slant-bg {
@@ -53,11 +66,17 @@ nav {
   width: 100%;
   background-color: #96ffb0;
   transform-origin: top left;
-  transform: skewY(-10deg);
+  transform: skewY(-15deg);
 }
 
 .temp-white-space {
   height: 400px;
+}
+
+.rain_drops {
+  height: 550px;
+  margin-top: -30px;
+  margin-left: 20px;
 }
 
 
@@ -73,17 +92,28 @@ footer {
   width: 100%;
   background-color: #96ffb0;
   transform-origin: top right;
-  transform: skewY(-10deg);
+  transform: skewY(-15deg);
   z-index: -10;
 }
 
 footer ul {
   margin-top: 200px;
   text-align: center;
+
 }
 
 footer ul li {
   display: inline-block;
+  vertical-align: bottom;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.social {
+  height: auto;
+  width: 60px;
+}
+
+.social-fix {
+  height: 60px;
 }
