@@ -80,10 +80,21 @@ footer {
 footer ul {
   margin-top: 200px;
   text-align: center;
+
 }
 
 footer ul li {
   display: inline-block;
+  vertical-align: bottom;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.social {
+  height: auto;
+  width: 60px;
+}
+
+.social-fix {
+  height: 60px;
 }
