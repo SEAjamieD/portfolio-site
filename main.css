@@ -27,7 +27,7 @@ header {
   height: 100%;
   width: 100%;
   transform-origin: top left;
-  transform: skewY(-10deg);
+  transform: skewY(-20deg);
   background-color: #96ffb0;
 }
 
@@ -42,9 +42,22 @@ nav {
   display: none;   <!-- Currently set to none -->
 }
 
+.space_needle {
+  position: absolute;
+  right: 0;
+  margin-bottom: 10px;
+  height: 400px;
+  width: auto;
+  z-index: -2;
+}
+
+.needle_room {
+  height: 80px;
+}
+
 .slant {
   position: relative;
-  height: 100px;
+  height: 150px;
 }
 
 .slant-bg {
@@ -53,7 +66,7 @@ nav {
   width: 100%;
   background-color: #96ffb0;
   transform-origin: top left;
-  transform: skewY(-10deg);
+  transform: skewY(-20deg);
 }
 
 .temp-white-space {
@@ -73,7 +86,7 @@ footer {
   width: 100%;
   background-color: #96ffb0;
   transform-origin: top right;
-  transform: skewY(-10deg);
+  transform: skewY(-20deg);
   z-index: -10;
 }
 
