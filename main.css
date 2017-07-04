@@ -74,7 +74,8 @@ nav {
 }
 
 .rain_drops {
-  height: 500px;
+  height: 550px;
+  margin-top: -30px;
   margin-left: 20px;
 }
 
