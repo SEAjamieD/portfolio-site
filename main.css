@@ -73,6 +73,11 @@ nav {
   height: 400px;
 }
 
+.rain_drops {
+  height: 500px;
+  margin-left: 20px;
+}
+
 
 footer {
   position: relative;
