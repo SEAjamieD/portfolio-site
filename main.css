@@ -1,8 +1,16 @@
+/*fonts*/
+
+@font-face {
+  font-family: DDCHardware-Regular;
+  src: url(fonts/ddchardware-regular.woff);
+}
+
 /*global styles*/
 
 * {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  /*border: 1px solid red;*/
 }
 
 html,
@@ -16,7 +24,12 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'DDCHardware-Regular', sans-serif;
+  color: #66cc99;
+}
+
+h1 {
+  font-size: 5.5em;
 }
 
 .wrapper {
@@ -37,9 +50,24 @@ h6 {
 /*header styles*/
 
 header {
+  position: relative;
   height: 667px;
   background-color: #96ffB0;
-  position: relative;
+}
+
+.tagline {
+  position: absolute;
+  width: 60%;
+  top: 35%;
+  left: 5%;
+}
+
+.down-arrows {
+  position: absolute;
+  width: 20%;
+  bottom: 10%;
+  right: 10%;
+  z-index: 1;
 }
 
 .triangle {
@@ -50,6 +78,14 @@ header {
   height: 225px;
   margin-bottom: -1px;
 }
+
+/*navigation styles*/
+
+nav {              /*****************/
+  display: none;  /*Temp display none*/
+}                 /*****************/
+
+
 
 /*full-section styles*/
 
