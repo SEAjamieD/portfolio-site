@@ -71,6 +71,15 @@ header {
 }
 
 
+/*project section styles*/
+
+#projectPolygons {
+  position: absolute;
+  top: 0;
+  fill: #96FFB0;
+}
+
+
 
 /*Footer styles*/
 
@@ -83,7 +92,7 @@ footer {
 
 footer ul {
   position: relative;
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 20px;
@@ -96,5 +105,5 @@ footer li {
 }
 
 .social {
-  height: 50px;
+  height: 60px;
 }
