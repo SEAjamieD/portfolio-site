@@ -165,7 +165,37 @@ nav {              /*****************/
   height: 667px;
 }
 
+.project-title {
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-17.5deg) scale(1.7);
+  padding: 5px 5px;
+}
 
+.project-title:hover {
+  transform: rotate(0deg) scale(2);
+  color: #333;
+}
+
+#p1 {
+  top: 50px;
+  right: 12%;
+}
+
+#p2 {
+  top: 175px;
+  left: 12%;
+}
+
+#p3 {
+  top: 180px;
+  right: 12%;
+}
+
+#p4 {
+  top: 305px;
+  left: 12%;
+}
 
 /*Footer styles*/
 
