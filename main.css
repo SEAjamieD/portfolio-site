@@ -199,19 +199,33 @@ nav {              /*****************/
 
 /*Contact section styles*/
 
-.input {
+.contact-form {
   position: absolute;
+  z-index: 1;
+  width: 60%;
+  max-width: 400px;
+  right: 10%;
+  top: 5%;
+}
+
+.input {
   font-size: 1.5em;
   color: grey;
   background-color: lightgrey;
-  width: 50%;
-  max-width: 400px;
+  width: 100%;
   border: 5px solid #96FFB0;
   border-radius: 10px;
-  z-index: 1;
+  padding: 2.5px 2.5px;
+  margin-bottom: 5px;
 }
 
-#name {
+.contact-submit {
+  width: 150px;
+  padding: 2.5px 2.5px;
+  margin-top: 5px;
+}
+
+/*#name {
   right: 10%;
   top: 5%;
 }
@@ -224,7 +238,8 @@ nav {              /*****************/
 textarea {
   right: 10%;
   top: 20%;
-}
+}*/
+
 
 /*Footer styles*/
 
