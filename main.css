@@ -87,6 +87,51 @@ header {
 }
 
 /*navigation styles*/
+.nav-icon {
+  position: fixed;
+  top: 12px;
+  right: 15px;
+  z-index: 20;
+}
+
+.bar {
+  width: 70px;
+  height: 15px;
+  background-color: #66cc99;
+}
+
+.bar-top {
+  position: relative;
+  top: 0;
+  transition: .25s;
+}
+
+.top-open {
+  transform: translate(0, 25px) rotate(45deg);
+  transition: .25s;
+}
+
+.bar-middle {
+  position: relative;
+  top: 8px;
+  transition: .5s;
+}
+
+.middle-open {
+  display: none;
+  transition: .25s
+}
+
+.bar-bottom {
+  position: relative;
+  top: 16px;
+  transition: .25s;
+}
+
+.bottom-open {
+  transform: translate(0px, -7px) rotate(-45deg);
+  transition: .25s;
+}
 
 .nav-wrap {
   position: fixed;
@@ -126,19 +171,6 @@ header {
   color: #66cc99;
   padding: 10px 10%;
 }
-
-
-.nav-menu-placeholder {
-  position: fixed;
-  /*background-color: #66cc99;*/
-  height: 60px;
-  width: 60px;
-  top: 10px;
-  right: 15px;
-  border: 4px solid #66cc99;
-  z-index: 10;
-}
-
 
 /*About me section styles*/
 
