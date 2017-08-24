@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.nav-wrap').toggleClass('show-nav');
   });
 
-  $('.close').on('click', function(){
+  $('.nav ul a').on('click', function (){
     $('.nav-wrap').toggleClass('show-nav');
   });
 

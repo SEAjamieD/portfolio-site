@@ -94,7 +94,7 @@ header {
   right: -100%;
   width: 100%;
   height: 100vh;
-  background-color: lightblue;
+  background: linear-gradient(white, #96ffB0);
   transition: .5s;
   z-index: 15;
 }
@@ -111,7 +111,6 @@ header {
 .nav li {
   display: block;
   text-align: center;
-  background-color: pink;
   margin: 20px 10px;
   padding: 20px 10px;
 }
@@ -119,7 +118,7 @@ header {
 .nav li a {
   text-decoration: none;
   font-size: 1.7em;
-  color: white;
+  color: #66cc99;
   padding: 10px 30%;
 }
 
@@ -150,6 +149,11 @@ header {
   top: 22%;
   left: 5%;
   width: 55%;
+}
+
+.about-me a {
+  position: absolute;
+  top: -20px;
 }
 
 .name {
@@ -190,6 +194,11 @@ header {
 
 
 /*project section styles*/
+
+.projects a {
+  position: absolute;
+  top: 0px;
+}
 
 #projectPolygons {
   position: absolute;
@@ -232,6 +241,11 @@ header {
 }
 
 /*Contact section styles*/
+
+.contact a {
+  position: absolute;
+  top: 0;
+}
 
 .contact-form {
   position: absolute;
