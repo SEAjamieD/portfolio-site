@@ -5,36 +5,40 @@
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 </head>
 
 <body>
+    <div class="nav-wrap">
+      <nav class="nav">
+        <ul>
+        <li><a href="index.html/#about-me">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="close"><a href="#">Close</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
   <div class="wrapper">
     <header>  <!-- Begin Header section -->
       <h1>Jamie Degnan</h1>
-      <div class="nav-menu-placeholder">nav place holder</div>
+      <div class="nav-menu-placeholder"></div>
       <img src="images/tagline.svg" class="tagline" alt="Aspiring web developer image">
       <img src="images/down-arrows.svg" class="down-arrows" alt="down arrows">
       <svg class="triangle" viewBox="0,0 100,100" preserveAspectRatio="none">
         <polygon points="0,75 0,100 100,100 100,0" />
       <svg>
-        <div class="nav">
-        <nav class="nav">
-          <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        </div>
     </header> <!-- end header section -->
 
     <section class="body">
 
       <div class="about-me full-section">
-
+      <a name="about-me"></a>
       <h2>Hi!</h2>
 
       <p>My name is <span class="name">Jamie</span> and I'm an aspiring developer with an affinity for bold colors living in the beautiful Pacific North West with my amazing wife, Jen, and our awesome pup named Mason.  Welcome to my portfolio - I hope you like what you see!</p>
@@ -112,5 +116,7 @@
 
     </footer>  <!-- End footer section -->
   </div>
+
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
