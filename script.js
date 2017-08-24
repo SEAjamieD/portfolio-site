@@ -5,12 +5,12 @@ $(document).ready(function() {
   $navButton.on('click', function(){
     $('.nav ul').addClass('hide')
     $('.nav-wrap').toggleClass('show-nav');
-    $('.nav ul').fadeIn(1000);
+    $('.nav ul').fadeIn(800);
   });
 
   $('.nav ul a').on('click', function(){
     $('.nav-wrap').toggleClass('show-nav');
-    $('.nav ul').fadeOut(1000);
+    $('.nav ul').fadeOut(800);
   });
 
 });

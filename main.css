@@ -94,7 +94,7 @@ header {
   right: -100%;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(white, #96ffB0);
+  background: linear-gradient(white 25%, #96ffB0 55%);
   transition: .5s;
   z-index: 15;
 }
@@ -115,15 +115,16 @@ header {
 .nav li {
   display: block;
   text-align: center;
-  margin: 20px 10px;
+  margin: 30px 10px;
   padding: 20px 10px;
 }
 
 .nav li a {
   text-decoration: none;
-  font-size: 1.7em;
+  font-family: DDCHardware-Regular;
+  font-size: 1.9em;
   color: #66cc99;
-  padding: 10px 30%;
+  padding: 10px 10%;
 }
 
 
