@@ -24,4 +24,8 @@ $(document).ready(function() {
     $('.bar-middle').toggleClass('middle-open');
   });
 
+  $('body').on('scroll', function(){
+    $navIcon.toggleClass('hide');
+  });
+
 });
