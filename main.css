@@ -103,6 +103,10 @@ header {
   right: 0;
 }
 
+.hide {
+  display: none;
+}
+
 .nav {
   list-style: none;
   width: 100%;
