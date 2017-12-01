@@ -32,10 +32,14 @@ h2 {
   font-size: 3em;
 }
 
+h3 {
+  font-size: 1.5em;
+}
+
 p {
 /*  font-family: 'Open Sans', sans-serif;
   color: #333;*/
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.2em;
 }
 
@@ -245,44 +249,21 @@ header {
   top: 0px;
 }
 
-#projectPolygons {
-  position: absolute;
-  top: 0;
-  fill: #96FFB0;
-  width: 100%;
-  height: 667px;
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-rows: 33% 33%;
 }
 
-.project-title {
-  position: absolute;
-  z-index: 1;
-  transform: rotate(-17.5deg) scale(1.7);
-  padding: 5px 5px;
+.project-square {
+  /*border: 1px solid red;*/
+  padding: 5px;
 }
 
-.project-title:hover {
-  transform: rotate(0deg) scale(2);
-  color: #333;
-}
-
-#p1 {
-  top: 50px;
-  right: 12%;
-}
-
-#p2 {
-  top: 175px;
-  left: 12%;
-}
-
-#p3 {
-  top: 180px;
-  right: 12%;
-}
-
-#p4 {
-  top: 305px;
-  left: 12%;
+.project-square h3 {
+  text-align: center;
+  margin: 10px 5px;
 }
 
 /*Contact section styles*/
