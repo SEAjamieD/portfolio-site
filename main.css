@@ -72,9 +72,17 @@ header {
 .down-arrows {
   position: absolute;
   width: 20%;
-  bottom: 75px;
+  bottom: 95px;
   right: 10%;
   z-index: 1;
+  opacity: 0;
+  animation: point 2.5s infinite ease-out;
+}
+
+@keyframes point {
+  10% {opacity: 100;}
+  75% {opacity: 100;}
+  100% {transform: translateY(60px);}
 }
 
 .triangle {
