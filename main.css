@@ -101,48 +101,45 @@ header {
 /*navigation styles*/
 .nav-icon {
   position: fixed;
-  top: 12px;
-  right: 15px;
+  height: 40px;
+  top: 20px;
+  right: 5%;
   z-index: 20;
 }
 
 .bar {
-  width: 70px;
-  height: 15px;
+  position: relative;
+  width: 50px;
+  height: 8px;
   background-color: #66cc99;
+  transition: .25s;
 }
 
 .bar-top {
-  position: relative;
   top: 0;
-  transition: .25s;
 }
 
-.top-open {
-  transform: translate(0, 25px) rotate(45deg);
-  transition: .25s;
+.bar-top.open {
+  transform-origin: left;
+  transform: translateY(-3px) rotate(45deg);
 }
 
 .bar-middle {
-  position: relative;
   top: 8px;
-  transition: .5s;
 }
 
-.middle-open {
-  display: none;
-  transition: .25s
+.bar-middle.open {
+  opacity: 0;
+
 }
 
 .bar-bottom {
-  position: relative;
   top: 16px;
-  transition: .25s;
 }
 
-.bottom-open {
-  transform: translate(0px, -7px) rotate(-45deg);
-  transition: .25s;
+.bar-bottom.open {
+  transform-origin: left;
+  transform: rotate(-45deg);
 }
 
 .nav-wrap {

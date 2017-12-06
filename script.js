@@ -4,9 +4,10 @@ $(document).ready(function() {
   $navIcon = $('.nav-icon');
   $navIcon.on('click', function(){
     //for hamburger
-    $('.bar-top').toggleClass('top-open');
-    $('.bar-bottom').toggleClass('bottom-open');
-    $('.bar-middle').toggleClass('middle-open');
+    // $('.bar-top').toggleClass('top-open');
+    // $('.bar-bottom').toggleClass('bottom-open');
+    // $('.bar-middle').toggleClass('middle-open');
+    $('.bar').toggleClass('open')
 
 
     //for slideout - open
