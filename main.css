@@ -43,6 +43,10 @@ p {
   line-height: 1.2em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   position: relative;
   min-height: 100%;
@@ -240,26 +244,27 @@ header {
 
 
 /*project section styles*/
-
-.projects a {
-  position: absolute;
-  top: 0px;
+.projects-title {
+  text-align: center;
+  padding-top: 15px;
 }
 
 .projects {
+  padding: 0 5%;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 8px;
   grid-template-rows: 33% 33%;
 }
 
 .project-square {
-  /*border: 1px solid red;*/
   padding: 5px;
 }
 
+
 .project-square h3 {
+  font-size: 1.3em;
   text-align: center;
   margin: 10px 5px;
 }

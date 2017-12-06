@@ -41,18 +41,3 @@ $(document).ready(function() {
     });
 
 });  //End jquery
-
-
-
-  // var lastScrollTop = 0;
-  // $(window).scroll(function(){
-  //    var st = $(this).scrollTop();
-  //    if (st > lastScrollTop){
-  //        // downscroll code
-  //        $navIcon.fadeOut()
-  //    } else {
-  //       // upscroll code
-  //       $navIcon.fadeIn()
-  //    }
-  //    lastScrollTop = st;
-  // });
