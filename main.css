@@ -7,6 +7,12 @@
 
 /*global styles*/
 
+:root {
+  --shadow:
+      0 4px 6px rgba(50,50,93,.11),
+      0 1px 3px rgba(0,0,0,.08);
+}
+
 html,
 body {
   height: 100%;
@@ -22,6 +28,7 @@ h5,
 h6 {
   font-family: 'DDCHardware-Regular', sans-serif;
   color: #66cc99;
+  text-shadow: var(--shadow);
 }
 
 h1 {
@@ -30,6 +37,7 @@ h1 {
 
 h2 {
   font-size: 3em;
+  text-shadow: var(--shadow);
 }
 
 h3 {
@@ -43,10 +51,13 @@ p {
   line-height: 1.2em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   position: relative;
   min-height: 100%;
-  /*border: 1px solid blue;*/
  /* padding-bottom: 100px;  PADDING FOR FOOTER HERE*/
 }
 
@@ -101,48 +112,46 @@ header {
 /*navigation styles*/
 .nav-icon {
   position: fixed;
-  top: 12px;
-  right: 15px;
+  height: 40px;
+  top: 20px;
+  right: 5%;
   z-index: 20;
 }
 
 .bar {
-  width: 70px;
-  height: 15px;
+  position: relative;
+  width: 50px;
+  height: 8px;
   background-color: #66cc99;
+  transition: .25s;
+  box-shadow: var(--shadow);
 }
 
 .bar-top {
-  position: relative;
   top: 0;
-  transition: .25s;
 }
 
-.top-open {
-  transform: translate(0, 25px) rotate(45deg);
-  transition: .25s;
+.bar-top.open {
+  transform-origin: left;
+  transform: translateY(-3px) rotate(45deg);
 }
 
 .bar-middle {
-  position: relative;
   top: 8px;
-  transition: .5s;
 }
 
-.middle-open {
-  display: none;
-  transition: .25s
+.bar-middle.open {
+  opacity: 0;
+
 }
 
 .bar-bottom {
-  position: relative;
   top: 16px;
-  transition: .25s;
 }
 
-.bottom-open {
-  transform: translate(0px, -7px) rotate(-45deg);
-  transition: .25s;
+.bar-bottom.open {
+  transform-origin: left;
+  transform: rotate(-45deg);
 }
 
 .nav-wrap {
@@ -243,26 +252,27 @@ header {
 
 
 /*project section styles*/
-
-.projects a {
-  position: absolute;
-  top: 0px;
+.projects-title {
+  text-align: center;
+  padding-top: 15px;
 }
 
 .projects {
+  padding: 0 5%;
   margin-top: 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 8px;
   grid-template-rows: 33% 33%;
 }
 
 .project-square {
-  /*border: 1px solid red;*/
   padding: 5px;
 }
 
+
 .project-square h3 {
+  font-size: 1.3em;
   text-align: center;
   margin: 10px 5px;
 }
@@ -292,6 +302,7 @@ header {
   padding: 2.5px 2.5px;
   margin-top: 35px;
   z-index: 10;
+  justify-self: center;
 }
 
 #download-icon {
@@ -344,4 +355,55 @@ footer li {
 
 .social {
   height: 60px;
+}
+
+/*Single project pages*/
+.single-project-expand {
+
+
+}
+
+.single-page-project-title {
+  display: inline-block;
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.single-page-project-description {
+  padding: 20px 5%;
+  position: absolute;
+  z-index: 5;
+}
+
+.description-paragraph {
+  margin-top: 15px;
+  text-align: justify;
+}
+
+.technology-used {
+  margin: 20px 0;
+}
+
+highlight {
+  font-family: 'DDCHardware-Regular', sans-serif;
+  font-size: 1.2em;
+  color: #66cc99;
+}
+
+.technology-used span {
+  display: block;
+  padding: 5px 0;
+}
+
+.visit-button {
+  display: block;
+  width: 60%;
+  max-width: 300px;
+  margin: 30px auto;
+  background-color: #66cc99;
+  padding: 5px 8px;
+  font-size: 1.5em;
+  color: #333;
+  box-shadow: var(--shadow);
 }
