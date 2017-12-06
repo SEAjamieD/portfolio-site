@@ -4,11 +4,7 @@ $(document).ready(function() {
   $navIcon = $('.nav-icon');
   $navIcon.on('click', function(){
     //for hamburger
-    // $('.bar-top').toggleClass('top-open');
-    // $('.bar-bottom').toggleClass('bottom-open');
-    // $('.bar-middle').toggleClass('middle-open');
     $('.bar').toggleClass('open')
-
 
     //for slideout - open
     $('.nav ul').addClass('hide')
@@ -20,9 +16,7 @@ $(document).ready(function() {
   $('.nav ul a').on('click', function(){
     $('.nav-wrap').toggleClass('show-nav');
     $('.nav ul').fadeOut(800);
-    $('.bar-top').toggleClass('top-open');
-    $('.bar-bottom').toggleClass('bottom-open');
-    $('.bar-middle').toggleClass('middle-open');
+    $('.bar').toggleClass('open')
   });
 
   // Thanks to this resource: https://stackoverflow.com/questions/4326845/how-can-i-determine-the-direction-of-a-jquery-scroll-event
