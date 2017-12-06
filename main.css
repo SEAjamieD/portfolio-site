@@ -406,4 +406,6 @@ highlight {
   font-size: 1.5em;
   color: #333;
   box-shadow: var(--shadow);
+  -webkit-appearance: none;
+  border: none;
 }
