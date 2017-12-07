@@ -468,5 +468,14 @@ highlight {
       font-size: 14px;
     }
 
+    .single-page-project-title {
+      font-size: 2.5em;
+    }
+
+    .visit-button {
+      font-size: 1.2em;
+      padding: 10px 8px;
+    }
+
 
 }
