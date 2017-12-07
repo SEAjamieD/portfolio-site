@@ -28,7 +28,7 @@ $(document).ready(function() {
     //set the current scroll top to wherever you are right now
     var currentScrollTop = $(this).scrollTop();
     //if the where you are now is higher than where you just were, you're going up
-    if ((currentScrollTop > lastScrollTop) && (currentScrollTop > 300)) {
+    if ((currentScrollTop > lastScrollTop) && (currentScrollTop > 50)) {
       //execute the going up function
       $navIcon.fadeOut();
       } else {
