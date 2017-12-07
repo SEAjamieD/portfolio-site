@@ -275,13 +275,20 @@ header h1 {
   grid-template-rows: 33% 33%;
 }
 
+.projects > a {
+  color: #333;
+}
+
 .project-square {
   padding: 5px;
+  border-radius: 5px;
+  height: 195px;
+  box-shadow: var(--shadow);
 }
 
 
 .project-square h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   text-align: center;
   margin: 10px 5px;
 }
@@ -367,10 +374,6 @@ footer li {
 }
 
 /*Single project pages*/
-.single-project-expand {
-
-
-}
 
 .single-page-project-title {
   display: inline-block;
