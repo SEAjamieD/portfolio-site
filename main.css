@@ -426,3 +426,47 @@ highlight {
   color: purple;
   font-weight: 800;
 }
+
+/* Media Queries */
+/* Smaller phone - Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    header {
+      height: 567px;
+    }
+    header h1 {
+      font-size: 4em;
+    }
+
+    .project-square > p {
+      font-size: 14px;
+    }
+
+    .contact-me.full-section {
+      height: 600px;
+    }
+
+    #paperplane {
+      width: 90px;
+    }
+
+    #download-icon,
+    #contact-icon-linkedin {
+      width: 40px;
+      height: 40px;
+    }
+
+    .contact-email,
+    .contact-download,
+    .download-link,
+    .contact-linkedin,
+    .linkedin-link {
+      font-size: 14px;
+    }
+
+
+}
