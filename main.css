@@ -32,7 +32,7 @@ h6 {
 }
 
 h1 {
-  font-size: 5.5em;
+  font-size: 5em;
 }
 
 h2 {
@@ -77,11 +77,20 @@ header {
   background-color: #96ffB0;
 }
 
+header h1 {
+  padding-top: 9px;
+  padding-left: 5%;
+}
+
 .tagline {
-  position: absolute;
-  width: 200px;
-  top: 35%;
-  left: 5%;
+  display: block;
+  width: 300px;
+  margin-top: 30px;
+  padding-left: 7%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  color: #66cc99;
+  text-shadow: var(--shadow);
 }
 
 .down-arrows {
