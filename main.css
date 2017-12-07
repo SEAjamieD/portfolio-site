@@ -409,3 +409,8 @@ highlight {
   -webkit-appearance: none;
   border: none;
 }
+
+.ref-tag {
+  color: purple;
+  font-weight: 800;
+}
