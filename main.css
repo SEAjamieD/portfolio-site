@@ -429,11 +429,13 @@ highlight {
 
 /* Media Queries */
 /* Smaller phone - Portrait */
-@media only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
+@media screen
+  and (min-width: 300px)
+  and (max-width: 374px) {
+
+    body {
+      background-color: powderblue;
+    }
 
     header {
       height: 567px;
@@ -479,3 +481,47 @@ highlight {
 
 
 }
+
+@media screen
+  and (min-width: 620px)
+  and (max-width: 730px) {
+
+    header h1 {
+      max-width: 500px;
+    }
+  }
+
+  @media screen
+    and (min-width: 620px) {
+      #space_needle {
+        right: 5%;
+      }
+
+      header h1 {
+        padding-top: 10%;
+      }
+
+      .contact-grid {
+        width: 500px;
+      }
+    }
+
+  @media screen
+    and (min-width: 760px) {
+      .projects.full-section {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-top: 50px;
+        height: 550px;
+      }
+
+      .signature {
+        width: 300px;
+        bottom: 200px;
+        left: 25%;
+      }
+
+      footer ul {
+        width: 500px;
+      }
+
+    }
