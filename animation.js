@@ -1,0 +1,7 @@
+var lineDrawing = anime({
+  targets: '#signature-layer path',
+  strokeDashoffset: [anime.setDashoffset, 0],
+  easing: 'easeInOutSine',
+  duration: 1500,
+  delay: function(el, i) { return i * 350 },
+});

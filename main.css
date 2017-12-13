@@ -233,9 +233,13 @@ header h1 {
   position: absolute;
   width: 250px;
   bottom: 115px;
-  fill: green;
   left: 10%;
   z-index: 3;
+
+  fill: none;
+  stroke: black;
+  stroke-width: 5;
+  stroke-miterlimit: 10;
 }
 
 
