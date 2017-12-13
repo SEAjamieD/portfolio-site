@@ -236,10 +236,15 @@ header h1 {
   left: 10%;
   z-index: 3;
 
+}
+
+.signature path {
+  opacity: 0;
+  stroke: #333;
   fill: none;
-  stroke: black;
   stroke-width: 5;
   stroke-miterlimit: 10;
+
 }
 
 
@@ -437,10 +442,6 @@ highlight {
 @media screen
   and (min-width: 300px)
   and (max-width: 374px) {
-
-    body {
-      background-color: powderblue;
-    }
 
     header {
       height: 567px;
